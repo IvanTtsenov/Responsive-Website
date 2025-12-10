@@ -1,0 +1,79 @@
+.tablet .navbar {
+    max-height: 5%;
+}
+
+
+.tablet .navbar_wrapper {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.895);
+}
+
+.tablet #navbar_logo {
+    cursor: pointer;
+    width: 20%;
+    max-width: 80px;
+    height: max-height;
+}
+
+.tablet #navbar_logo .logo {
+    height: 100%;
+    width: 100%;
+}
+
+.tablet .menu {
+    cursor: pointer;
+    margin: auto 2%;
+    order: 3;
+    width: 15%;
+    max-width: 80px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.tablet .menu_items {
+    background-color:yellow;
+    margin: 2px 5px;
+    width:auto;
+    height: 8px;
+    border-radius: 35%;
+}
+
+.tablet .pages_wrapper {
+    border-top: 1px solid yellow;
+    background-color: rgba(0, 0, 0, 0.895);
+    align-self: center;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    min-height: 300px;
+}
+
+.tablet .pages_wrapper .pages {
+    cursor: pointer;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+
+}
+
+.tablet .pages_wrapper .pages:hover .pages_links{
+    color: yellow;
+}
+
+.tablet .pages_wrapper .pages .pages_links {
+    padding: 0 30px;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: 500;
+    color: white;
+}
+
