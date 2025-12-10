@@ -40,12 +40,13 @@
     margin: 2px 5px;
     width:auto;
     height: 8px;
-    border-radius: 35%;
+    border-radius: 10%;
 }
 
 .mobile .pages_wrapper {
     border-top: 1px solid yellow;
-    background-color: rgba(0, 0, 0, 0.895);
+    border-bottom: 1px solid yellow;
+    background-color: rgb(0, 0, 0);
     align-self: center;
     position: absolute;
     width: 100%;
@@ -62,7 +63,7 @@
     display: flex;
     align-items: center;
     height: 50px;
-
+    margin: 10px 0px;
 }
 
 .mobile .pages_wrapper .pages:hover .pages_links{
@@ -75,5 +76,63 @@
     font-size: larger;
     font-weight: 500;
     color: white;
+    height: 100%;
 }
 
+.mobile .contact_wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile .contact {
+    width: 100%;
+    height: max-content;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.895);
+    display: flex;
+    flex-direction: column;
+    border-radius: 5%;
+}
+
+.mobile .contact h1 {
+    margin:0 auto;
+    padding: 10px;
+    color: white;
+    font: 500;
+}
+
+.mobile .contact_details {
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile .contact_details h2 {
+        margin:0 auto;
+        padding: 10px;
+        color: white;
+        font: 500;
+}
+
+.mobile .contact_details address p{
+    color: white;
+    font: 500;
+    padding: 10px;
+}
+
+.mobile .map {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    align-self: center;
+    margin: auto;
+}
+
+.mobile .map h2 {
+    padding: 20px 0px;
+}

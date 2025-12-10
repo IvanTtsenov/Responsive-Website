@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,10 +15,11 @@
     <script type="module" src="main.js"></script>
     <title>Responsive Website</title>
 </head>
+
 <body>
     <header>
-    <nav class="navbar">
-        <div class="navbar_wrapper">
+        <nav class="navbar">
+            <div class="navbar_wrapper">
                 <a href="/" id="navbar_logo">
                     <img src="/Sources/logo.png" alt="Logo" class="logo">
                 </a>
@@ -28,24 +30,43 @@
                 </div>
                 <ul class="pages_wrapper hidden">
                     <li class="pages">
-                        <a href="/" class="pages_links">Home</a>
+                        <a href="/" class="pages_links" data-page="">Home</a>
                     </li>
                     <li class="pages">
-                        <a href="second.html" class="pages_links">Second</a>
+                        <a href="second.html" class="pages_links" data-page="second">Second</a>
                     </li>
                     <li class="pages">
-                        <a href="third.html" class="pages_links">Third</a>
+                        <a href="third.html" class="pages_links" data-page="third">Third</a>
                     </li>
                     <li class="pages">
-                        <a href="contacts.html" class="pages_links">Contacts</a>
+                        <a href="contacts.html" class="pages_links" data-page="contacts">Contacts</a>
                     </li>
                 </ul>
-        </div>
-    </nav>
+            </div>
+        </nav>
     </header>
-    <main></main>
+    <main>
+        <div class="contact_wrapper">
+        <section class="contact">
+            <h1>Контакти</h1>
+            <section class="contact_details">
+                <h2>Свържете се с нас</h2>
+                <address>
+                    <p>E-mail: <a href="mailto:top.info@nbu.bg">top.info@nbu.bg</a></p>
+                    <p>Тел: <a href="tel:+35928110180">02/8110 180</a></p>
+                    <p>ж.к. Овча купел 2, ул. „Монтевидео“ 21, 1618 София</p>
+                </address>
+            </section>
+            <section class="map">
+                <h2>Намерете ни!</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d878.4334268823318!2d23.25156305228949!3d42.67822531858735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa9b2543b14005%3A0xea8e06ca71a2aede!2z0J3QvtCyINCx0YrQu9Cz0LDRgNGB0LrQuCDRg9C90LjQstC10YDRgdC40YLQtdGC!5e1!3m2!1sbg!2sbg!4v1765398434751!5m2!1sbg!2sbg"  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </section>
+        </div>
+    </main>
     <footer>
-           <p>&copy; 2025 Ivan Tsenov</p>
+        <p>&copy; 2025 Ivan Tsenov</p>
     </footer>
 </body>
+
 </html>
