@@ -5,8 +5,6 @@
     const isMobile = /mobile|iphone|ipod|android.*mobile|blackberry|iemobile|opera mini/i.test(ua);
     if (isTablet) return "tablet";
     if (isMobile) return "mobile";
-    if (window.innerWidth <= 767) return "mobile";
-    if (window.innerWidth <= 1024) return "tablet";
     return "desktop";
   }
 
