@@ -43,8 +43,8 @@ if (deviceType == "mobile") {
     body.classList.add("desktop");
 }
 
-let currentPage = window.location.pathname.split("/").pop().split(".")[0] 
-if(currentPage === "index"){
+let currentPage = window.location.pathname.split("/").pop().split(".")[0]
+if (currentPage === "index") {
     currentPage = "";
 }
 
@@ -64,7 +64,7 @@ document.addEventListener("click", (e) => {
 pagesLinks.forEach(el => {
     el.classList.remove("active")
 
-    if(currentPage === el.getAttribute("data-page")){
+    if (currentPage === el.getAttribute("data-page")) {
         el.classList.add("active");
     }
 });

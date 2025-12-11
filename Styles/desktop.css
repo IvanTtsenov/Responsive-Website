@@ -10,7 +10,7 @@
     width: 100%;
     position: fixed;
     display: flex;
-    background-color: rgba(0, 0, 0, 0.895);
+    background-color: #0e0d00;
 }
 
 .desktop #navbar_logo {
@@ -59,8 +59,11 @@
 }
 
 .desktop .contact_wrapper {
-    width: 100vw;
-    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,14 +72,15 @@
 .desktop .contact {
     width: 500px;
     height: 500px;
-    background-color: rgba(0, 0, 0, 0.895);
+    background-color: #0e0d00;
     display: flex;
     flex-direction: column;
     border-radius: 5%;
+    box-shadow: 0 0 20px 5px grey;
 }
 
 .desktop .contact h1 {
-    margin:0 auto;
+    margin: 0 auto;
     padding: 10px;
     color: white;
     font: 500;
@@ -88,23 +92,23 @@
 }
 
 .desktop .contact_details h2 {
-        margin:0 auto;
-        padding: 10px;
-        color: white;
-        font: 500;
+    margin: 0 auto;
+    padding: 10px;
+    color: white;
+    font: 500;
 }
 
-.desktop .contact_details address p{
+.desktop .contact_details address p {
     color: white;
     font: 500;
     padding: 10px;
 }
 
-.desktop .contact_details address p a{
+.desktop .contact_details address p a {
     text-decoration: none;
 }
 
-.desktop .contact_details address p a:hover{
+.desktop .contact_details address p a:hover {
     text-decoration: underline;
 }
 
@@ -122,7 +126,13 @@
     padding: 20px 0px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1211px) {
+
+    .active {
+        color: yellow !important;
+        border-bottom: none
+    }
+
     .desktop .menu_items {
         display: block;
     }
@@ -157,16 +167,22 @@
 
     .desktop .pages_wrapper {
         border-top: 1px solid yellow;
-        border-bottom: 1px solid yellow;
+        border-radius: 0% 0% 10% 10%;
         background-color: rgb(0, 0, 0);
-        align-self: center;
         position: absolute;
-        width: 100%;
+        min-width: fit-content;
+        width: 50%;
         top: 100%;
+        right: 2%;
         display: flex;
         flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
         text-transform: uppercase;
-        min-height: max-content;
-        height: 350px;
+        min-height: 300px;
+        box-shadow:
+            -4px 0 6px -2px grey,
+            4px 0 6px -2px grey,
+            0 4px 6px -2px grey;
     }
 }

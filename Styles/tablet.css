@@ -8,7 +8,7 @@
     position: fixed;
     display: flex;
     justify-content: space-between;
-    background-color: rgba(0, 0, 0, 0.895);
+    background-color: #0e0d00;
 }
 
 .tablet #navbar_logo {
@@ -36,9 +36,9 @@
 }
 
 .tablet .menu_items {
-    background-color:yellow;
+    background-color: yellow;
     margin: 2px 5px;
-    width:auto;
+    width: auto;
     height: 8px;
     border-radius: 10%;
 }
@@ -57,8 +57,8 @@
     min-height: 300px;
     box-shadow:
         -4px 0 6px -2px grey,
-         4px 0 6px -2px grey, 
-         0 4px 6px -2px grey; 
+        4px 0 6px -2px grey,
+        0 4px 6px -2px grey;
 }
 
 .tablet .pages_wrapper .pages {
@@ -70,7 +70,7 @@
 
 }
 
-.tablet .pages_wrapper .pages:hover .pages_links{
+.tablet .pages_wrapper .pages:hover .pages_links {
     color: yellow;
 }
 
@@ -83,8 +83,11 @@
 }
 
 .tablet .contact_wrapper {
-    width: 100vw;
-    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,14 +96,15 @@
 .tablet .contact {
     width: 500px;
     height: 500px;
-    background-color: rgba(0, 0, 0, 0.895);
+    background-color: #0e0d00;
     display: flex;
     flex-direction: column;
     border-radius: 5%;
+    box-shadow: 0 0 20px 5px grey;
 }
 
 .tablet .contact h1 {
-    margin:0 auto;
+    margin: 0 auto;
     padding: 10px;
     color: white;
     font: 500;
@@ -112,23 +116,23 @@
 }
 
 .tablet .contact_details h2 {
-        margin:0 auto;
-        padding: 10px;
-        color: white;
-        font: 500;
+    margin: 0 auto;
+    padding: 10px;
+    color: white;
+    font: 500;
 }
 
-.tablet .contact_details address p{
+.tablet .contact_details address p {
     color: white;
     font: 500;
     padding: 10px;
 }
 
-.tablet .contact_details address p a{
+.tablet .contact_details address p a {
     text-decoration: none;
 }
 
-.tablet .contact_details address p a:hover{
+.tablet .contact_details address p a:hover {
     text-decoration: underline;
 }
 
