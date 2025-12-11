@@ -31,3 +31,13 @@ footer {
 .active {
     border-bottom: 3px solid yellow;
 }
+
+.tablet .active {
+    color: yellow !important;
+    border-bottom: none
+}
+
+.mobile .active {
+    color: yellow !important;
+    border-bottom: none
+}

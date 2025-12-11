@@ -1,3 +1,8 @@
+const menu = document.querySelector(".menu");
+const pages = document.querySelector(".pages_wrapper");
+const pagesLinks = document.querySelectorAll(".pages_links");
+const body = document.querySelector("body");
+
 
 function getDeviceType() {
     const ua = navigator.userAgent.toLowerCase();
@@ -8,8 +13,28 @@ function getDeviceType() {
     return "desktop";
 }
 
+function getDeviceOrientation() {
+    return window.matchMedia("(orientation: portrait)").matches
+        ? "portrait"
+        : "landscape";
+}
+
+function updateOrientationClasses() {
+    const body = document.body;
+
+    body.classList.remove("portrait", "landscape");
+
+    if (window.matchMedia("(orientation: portrait)").matches) {
+        body.classList.add("portrait");
+    } else {
+        body.classList.add("landscape");
+    }
+}
+
+updateOrientationClasses();
+window.addEventListener("orientationchange", updateOrientationClasses);
+
 let deviceType = getDeviceType();
-const body = document.querySelector("body");
 if (deviceType == "mobile") {
     body.classList.add("mobile");
 } else if (deviceType == "tablet") {
@@ -18,18 +43,27 @@ if (deviceType == "mobile") {
     body.classList.add("desktop");
 }
 
-const currentPage = window.location.pathname.split("/").pop().split(".")[0] 
-const menu = document.querySelector(".menu");
-const pages = document.querySelector(".pages_wrapper");
-const pagesLinks = document.querySelectorAll(".pages_links");
-menu.addEventListener("click", () => {
+let currentPage = window.location.pathname.split("/").pop().split(".")[0] 
+if(currentPage === "index"){
+    currentPage = "";
+}
+
+
+menu.addEventListener("click", (e) => {
     pages.classList.toggle("hidden");
 });
 
-pagesLinks.forEach(el => {
-    if(el.classList.contains("active")){
-        el.classList.remove("active")
+document.addEventListener("click", (e) => {
+    const clickedInsideMenu = pages.contains(e.target) || menu.contains(e.target);
+
+    if (!clickedInsideMenu && !pages.classList.contains("hidden")) {
+        pages.classList.add("hidden");
     }
+});
+
+pagesLinks.forEach(el => {
+    el.classList.remove("active")
+
     if(currentPage === el.getAttribute("data-page")){
         el.classList.add("active");
     }

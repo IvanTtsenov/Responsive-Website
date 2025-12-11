@@ -54,15 +54,42 @@
     display: flex;
     flex-direction: column;
     text-transform: uppercase;
-    min-height: 300px;
+    min-height: fit-content;
+    max-height: 300px;
+}
+
+.mobile.landscape .pages_wrapper {
+    border-top: 1px solid yellow;
+    border-bottom: none;
+    border-radius: 0% 0% 10% 10%;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    width: 50%;
+    top: 100%;
+    right: 2%;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    box-shadow:
+        -4px 0 6px -2px grey,
+         4px 0 6px -2px grey, 
+         0 4px 6px -2px grey; 
 }
 
 .mobile .pages_wrapper .pages {
     cursor: pointer;
-    height: 40px;
     display: flex;
     align-items: center;
     height: 50px;
+    margin: 10px 0px;
+}
+
+.mobile.landscape .pages_wrapper .pages {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    min-height: fit-content;
+    height:auto;
     margin: 10px 0px;
 }
 
@@ -77,6 +104,17 @@
     font-weight: 500;
     color: white;
     height: 100%;
+    width: 100%;
+}
+
+.mobile.landscape .pages_wrapper .pages .pages_links {
+    padding: 5px 30px;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: 500;
+    color: white;
+    height: 100%;
+    width: 100%;
 }
 
 .mobile .contact_wrapper {
