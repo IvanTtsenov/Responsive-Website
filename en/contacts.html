@@ -8,11 +8,11 @@
     <meta name="description" content="Simple responsive website project">
     <meta name="author" content="Ivan Tsenov">
     <link rel="icon" type="image/png" href="/images/favicon.png">
-    <link rel="stylesheet" href="Styles/main.css">
-    <link rel="stylesheet" href="Styles/mobile.css">
-    <link rel="stylesheet" href="Styles/tablet.css">
-    <link rel="stylesheet" href="Styles/desktop.css">
-    <script type="module" src="main.js"></script>
+    <link rel="stylesheet" href="../Styles/main.css">
+    <link rel="stylesheet" href="../Styles/mobile.css">
+    <link rel="stylesheet" href="../Styles/tablet.css">
+    <link rel="stylesheet" href="../Styles/desktop.css">
+    <script type="module" src="../main.js"></script>
     <title>Responsive Website</title>
 </head>
 
@@ -41,8 +41,8 @@
                     <button class="language">BG
                         <span class="arrow"></span>
                         <div class="languageChoose hidden">
-                            <a href="/bg/index.html" data="BG">BG</a>
-                            <a href="/en/index.html" data="EN">EN</a>
+                            <a href="/bg/contacts.html" data="BG">BG</a>
+                            <a href="/en/contacts.html" data="EN">EN</a>
                         </div>
                     </button>
                     <div class="menu">
@@ -54,7 +54,27 @@
             </div>
         </nav>
     </header>
-    <main></main>
+    <main>
+        <div class="contact_wrapper">
+            <section class="contact">
+                <h1>Контакти</h1>
+                <section class="contact_details">
+                    <h2>Свържете се с нас</h2>
+                    <address>
+                        <p>E-mail: <a href="mailto:top.info@nbu.bg">top.info@nbu.bg</a></p>
+                        <p>Тел: <a href="tel:+35928110180">02/8110 180</a></p>
+                        <p>ж.к. Овча купел 2, ул. „Монтевидео“ 21, 1618 София</p>
+                    </address>
+                </section>
+                <section class="map">
+                    <h2>Намерете ни!</h2>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d878.4334268823318!2d23.25156305228949!3d42.67822531858735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa9b2543b14005%3A0xea8e06ca71a2aede!2z0J3QvtCyINCx0YrQu9Cz0LDRgNGB0LrQuCDRg9C90LjQstC10YDRgdC40YLQtdGC!5e1!3m2!1sbg!2sbg!4v1765398434751!5m2!1sbg!2sbg"
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </section>
+            </section>
+        </div>
+    </main>
     <footer>
         <p>&copy; 2025 Ivan Tsenov</p>
     </footer>

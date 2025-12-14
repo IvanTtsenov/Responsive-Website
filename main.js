@@ -2,7 +2,8 @@ const menu = document.querySelector(".menu");
 const pages = document.querySelector(".pages_wrapper");
 const pagesLinks = document.querySelectorAll(".pages_links");
 const body = document.querySelector("body");
-
+const langBtn = document.querySelector(".language");
+const langMenu = document.querySelector(".languageChoose");
 
 function getDeviceType() {
     const ua = navigator.userAgent.toLowerCase();
@@ -37,8 +38,10 @@ window.addEventListener("orientationchange", updateOrientationClasses);
 let deviceType = getDeviceType();
 if (deviceType == "mobile") {
     body.classList.add("mobile");
+    pages.classList.add("hidden");
 } else if (deviceType == "tablet") {
     body.classList.add("tablet");
+    pages.classList.add("hidden");
 } else if (deviceType == "desktop" && !body.classList.contains("desktop")) {
     body.classList.add("desktop");
 }
@@ -50,14 +53,21 @@ if (currentPage === "index") {
 
 
 menu.addEventListener("click", (e) => {
-    pages.classList.toggle("hidden");
+    e.stopPropagation();
+    if (deviceType != "desktop") {
+        pages.classList.toggle("hidden");
+    } else {
+        pages.classList.toggle("open");
+    }
 });
 
 document.addEventListener("click", (e) => {
     const clickedInsideMenu = pages.contains(e.target) || menu.contains(e.target);
 
-    if (!clickedInsideMenu && !pages.classList.contains("hidden")) {
+    if (!clickedInsideMenu && !pages.classList.contains("hidden") && deviceType != "desktop") {
         pages.classList.add("hidden");
+    } else if (!clickedInsideMenu && pages.classList.contains("open") && deviceType === "desktop") {
+        pages.classList.remove("open");
     }
 });
 
@@ -69,5 +79,10 @@ pagesLinks.forEach(el => {
     }
 });
 
+langBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    langMenu.classList.toggle("hidden");
+    langBtn.classList.toggle("open");
+});
 
 

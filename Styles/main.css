@@ -44,6 +44,65 @@ footer {
     text-align: center;
 }
 
+.rightMenu {
+    display: flex;
+    margin:auto 2%;
+}
+
+.language {
+    padding: 4px 4px;
+    height: auto;
+    width: auto;
+    margin: auto 10px;
+    background-color: rgb(255, 255, 0);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    border: none;
+    position: relative;
+}
+
+.language:hover {
+    box-shadow: 0 0 5px 5px grey;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #000;
+    transition: transform 0.3s ease;
+}
+
+.language.open .arrow {
+    transform: rotate(180deg);
+}
+
+.languageChoose {
+    position: absolute;
+    background: #fff;
+   top:100%;
+   right: 0;
+   left: 0;
+   display: block;
+}
+
+.languageChoose a {
+    display: block;
+    padding: 6px 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+.languageChoose a:hover {
+    background: #f0f0f0;
+}
+
 .hidden {
     display: none !important;
 }
