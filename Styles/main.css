@@ -11,6 +11,9 @@ ul {
 
 body {
     background-color: #141300;
+    max-width: 3840px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 header {
@@ -46,7 +49,7 @@ footer {
 
 .rightMenu {
     display: flex;
-    margin:auto 2%;
+    margin: auto 2%;
 }
 
 .language {
@@ -85,22 +88,25 @@ footer {
 
 .languageChoose {
     position: absolute;
-    background: #fff;
-   top:100%;
-   right: 0;
-   left: 0;
-   display: block;
+    background-color: #b3b8a3;
+    top: 100%;
+    right: 0;
+    left: 0;
+    display: block;
 }
 
 .languageChoose a {
     display: block;
     padding: 6px 10px;
     text-decoration: none;
-    color: #000;
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
 }
 
 .languageChoose a:hover {
-    background: #f0f0f0;
+    background-color: rgb(143, 143, 12);
+    color: black;
 }
 
 .hidden {

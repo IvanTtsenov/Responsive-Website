@@ -15,26 +15,25 @@
     <script type="module" src="../main.js"></script>
     <title>Responsive Website</title>
 </head>
-
 <body>
     <header>
         <nav class="navbar">
             <div class="navbar_wrapper">
-                <a href="/" id="navbar_logo">
+                <a href="./index.html" id="navbar_logo">
                     <img src="/Sources/logo.png" alt="Logo" class="logo">
                 </a>
                 <ul class="pages_wrapper">
                     <li class="pages">
-                        <a href="/" class="pages_links" data-page="">Home</a>
+                        <a href="./index.html" class="pages_links" data-page="">Home</a>
                     </li>
                     <li class="pages">
-                        <a href="second.html" class="pages_links" data-page="second">Second</a>
+                        <a href="./second.html" class="pages_links" data-page="second">Second</a>
                     </li>
                     <li class="pages">
-                        <a href="third.html" class="pages_links" data-page="third">Third</a>
+                        <a href="./third.html" class="pages_links" data-page="third">Third</a>
                     </li>
                     <li class="pages">
-                        <a href="contacts.html" class="pages_links" data-page="contacts">Contacts</a>
+                        <a href="./contacts.html" class="pages_links" data-page="contacts">Contacts</a>
                     </li>
                 </ul>
                 <div class="rightMenu">
@@ -54,7 +53,34 @@
             </div>
         </nav>
     </header>
-    <main></main>
+    <main>
+          <section class="slideshow">
+        <div class="slideshow_container">
+
+            <div class="slide current">
+                <img src="../Sources/slide1.jpg" alt="Slide 1">
+            </div>
+            <div class="slide">
+                <img src="../Sources/slide2.jpg" alt="Slide 2">
+            </div>
+            <div class="slide">
+                <img src="../Sources/slide3.jpg" alt="Slide 3">
+            </div>
+            <div class="slide">
+                <img src="../Sources/slide4.jpg" alt="Slide 4">
+            </div>
+            <button class="move prev">&#10094;</button>
+            <button class="move next">&#10095;</button>
+            <div class="dots">
+                <span class="dot current" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+                <span class="dot" data-index="3"></span>
+            </div>
+
+        </div>
+    </section>
+    </main>
     <footer>
         <p>&copy; 2025 Ivan Tsenov</p>
     </footer>
