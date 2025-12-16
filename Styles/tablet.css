@@ -232,3 +232,57 @@
 .tablet .dot.current {
     background: white;
 }
+
+.tablet .card_images {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.tablet.landscape .slider {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 300px));
+  justify-content: center;
+  gap: 40px;
+  padding: 20px 40px;
+}
+
+.tablet.landscape .card_wrapper {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 12px;
+  border:2px solid #2f2f2f;
+  box-shadow:  0 10px 30px black;;
+  transition: transform 0.3s ease;
+}
+
+
+.tablet.portrait .cards {
+    overflow: hidden;
+}
+
+.tablet.portrait .slider {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding: 50px 20px;
+    scrollbar-width: none;
+}
+
+.tablet.portrait .slider::-webkit-scrollbar {
+    display: none;
+}
+
+.tablet.portrait .card_wrapper{
+    flex: 0 0 60%;
+    max-width: 60%;
+    height: 300px;
+    scroll-snap-align: center;
+    border-radius: 12px;
+    border: 2px solid #2f2f2f;
+    box-shadow: 0 10px 30px black;
+    overflow: hidden;
+}
