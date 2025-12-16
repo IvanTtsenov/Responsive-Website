@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Simple responsive website project">
     <meta name="author" content="Ivan Tsenov">
-    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <link rel="icon" type="image/png" href="/Sources/logo.png">
     <link rel="stylesheet" href="../Styles/main.css">
     <link rel="stylesheet" href="../Styles/mobile.css">
     <link rel="stylesheet" href="../Styles/tablet.css">
@@ -15,6 +15,7 @@
     <script type="module" src="../main.js"></script>
     <title>Responsive Website</title>
 </head>
+
 <body>
     <header>
         <nav class="navbar">
@@ -54,32 +55,63 @@
         </nav>
     </header>
     <main>
-          <section class="slideshow">
-        <div class="slideshow_container">
+        <section class="slideshow">
+            <div class="slideshow_container">
+                <div class="slide current">
+                    <img src="../Sources/slide1.jpg" alt="Slide 1">
+                </div>
+                <div class="slide">
+                    <img src="../Sources/slide2.jpg" alt="Slide 2">
+                </div>
+                <div class="slide">
+                    <img src="../Sources/slide3.jpg" alt="Slide 3">
+                </div>
+                <div class="slide">
+                    <img src="../Sources/slide4.jpg" alt="Slide 4">
+                </div>
+                <button class="move prev">&#10094;</button>
+                <button class="move next">&#10095;</button>
+                <div class="dots">
+                    <span class="dot current" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                    <span class="dot" data-index="3"></span>
+                </div>
 
-            <div class="slide current">
-                <img src="../Sources/slide1.jpg" alt="Slide 1">
             </div>
-            <div class="slide">
-                <img src="../Sources/slide2.jpg" alt="Slide 2">
+        </section>
+        <section class="cards">
+            <div class="card_wrapper">
+                <img src="../Sources/card1.jpg" alt="" class="card_images">
             </div>
-            <div class="slide">
-                <img src="../Sources/slide3.jpg" alt="Slide 3">
+            <div class="card_wrapper">
+                <img src="../Sources/card2.jpg" alt="" class="card_images">
             </div>
-            <div class="slide">
-                <img src="../Sources/slide4.jpg" alt="Slide 4">
+            <div class="card_wrapper">
+                <img src="../Sources/card3.jpg" alt="" class="card_images">
             </div>
-            <button class="move prev">&#10094;</button>
-            <button class="move next">&#10095;</button>
-            <div class="dots">
-                <span class="dot current" data-index="0"></span>
-                <span class="dot" data-index="1"></span>
-                <span class="dot" data-index="2"></span>
-                <span class="dot" data-index="3"></span>
+            <div class="card_wrapper">
+                <img src="../Sources/card4.jpg" alt="" class="card_images">
             </div>
-
-        </div>
-    </section>
+            <div class="card_wrapper">
+                <img src="../Sources/card5.jpg" alt="" class="card_images">
+            </div>
+            <div class="card_wrapper">
+                <img src="../Sources/card6.jpg" alt="" class="card_images">
+            </div>
+            <div class="card_wrapper">
+                <img src="../Sources/card7.jpg" alt="" class="card_images">
+            </div>
+            <div class="card_wrapper">
+                <img src="../Sources/card8.jpg" alt="" class="card_images">
+            </div>
+            <div class="card_wrapper">
+                <img src="../Sources/card9.jpg" alt="" class="card_images">
+            </div>
+            <div class="card_wrapper">
+                <img src="../Sources/card10.jpg" alt="" class="card_images">
+            </div>
+        </section>
     </main>
     <footer>
         <p>&copy; 2025 Ivan Tsenov</p>
