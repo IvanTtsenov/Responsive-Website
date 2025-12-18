@@ -126,3 +126,19 @@ footer {
     color: yellow !important;
     border-bottom: none
 }
+
+ h1 {
+  font-size: clamp(2.5rem, 4vw, 5.5rem);
+}
+
+p {
+    text-align: justify;
+}
+
+footer p {
+    text-align: center;
+}
+
+section.contact_details address a {
+    color: wheat;
+}

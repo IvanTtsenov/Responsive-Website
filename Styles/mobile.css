@@ -335,3 +335,69 @@
   object-fit: cover;
   display: block;
 }
+
+.mobile section.mission h1,
+.mobile section.story h1,
+.mobile section.goals h1 {
+  color: white;
+  width: max-content;
+  margin: 2% auto 0%;
+}
+
+.mobile .aboutus_wrapper {
+  padding: 3% 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.mobile p.info {
+  color: white;
+  padding: 10px 0px;
+}
+
+.mobile .side_images {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 2px solid #2f2f2f;
+  box-shadow: 0 10px 30px black;
+}
+
+.mobile .pictures {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.mobile.landscape .aboutus_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 80%;
+  margin: auto;
+}
+
+.mobile.landscape p.info {
+  color: white;
+  padding: 20px 0px;
+  max-width: 60%;
+}
+
+.mobile.landscape .side_images {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 2px solid #2f2f2f;
+  box-shadow: 0 10px 30px black;
+  max-width: 60%;
+  max-height: 50%;
+}
+
+.mobile.landscape .pictures {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
