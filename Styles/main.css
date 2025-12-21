@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -127,8 +129,8 @@ footer {
     border-bottom: none
 }
 
- h1 {
-  font-size: clamp(2.5rem, 4vw, 5.5rem);
+h1 {
+    font-size: clamp(2.5rem, 4vw, 5.5rem);
 }
 
 p {
@@ -142,3 +144,35 @@ footer p {
 section.contact_details address a {
     color: wheat;
 }
+
+button.casino_start {
+    border-radius: 12px;
+    padding: 4px 4px;
+    height: auto;
+    width: auto;
+    margin: 10px;
+    background-color: rgb(255, 255, 0);
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: black;
+    border: none;
+}
+
+button.casino_start.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+div.winner {
+    z-index: 11;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #141300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
