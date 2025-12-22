@@ -45,10 +45,18 @@ function prisePop(randomIndex) {
     const prizeName = casinoImages[randomIndex].getAttribute('prize');
     winnerPop.src = `../Sources/${prizeName}.png`
     winner.classList.remove('hidden');
-    if(prizeName.toLowerCase() === "explode".toLowerCase()){
-        winnerMessage.textContent = "Oops! Try Again.";
-    }else {
-        winnerMessage.textContent = "Congratulations! You've won!"
+    if (document.documentElement.lang.toLowerCase() === "en".toLowerCase()) {
+        if (prizeName.toLowerCase() === "explode".toLowerCase()) {
+            winnerMessage.textContent = "Oops! Try Again.";
+        } else {
+            winnerMessage.textContent = "Congratulations! You've won!"
+        }
+    } else if (document.documentElement.lang.toLowerCase() === "bg".toLowerCase()) {
+        if (prizeName.toLowerCase() === "explode".toLowerCase()) {
+            winnerMessage.textContent = "Опа! Опитайте отново!";
+        } else {
+            winnerMessage.textContent = "Поздравления! Вие спечелихте!"
+        }
     }
 }
 

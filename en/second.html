@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,11 +11,10 @@
     <link rel="stylesheet" href="../Styles/mobile.css">
     <link rel="stylesheet" href="../Styles/tablet.css">
     <link rel="stylesheet" href="../Styles/desktop.css">
-    <script type="module" src="../main.js"></script>
-    <script type="module" src="../casino.js"></script>
+    <script type="module" src="../Scripts/main.js"></script>
+    <script type="module" src="../Scripts/casino.js"></script>
     <title>Responsive Website</title>
 </head>
-
 <body>
     <header>
         <nav class="navbar">
@@ -55,10 +53,49 @@
             </div>
         </nav>
     </header>
-    <main></main>
+    <main>
+        <section class="casino">
+            <button class="casino_start">Play</button>
+            <div class="game">
+                <div class="game_contents">
+                    <img src="../Sources/coins.png" alt="" class="game_cards" prize="coins">
+                </div>
+                <div class="game_contents">
+                    <img src="../Sources/luckySeven.png" alt="" class="game_cards" prize="luckySeven">
+                </div>
+                <div class="game_contents">
+                    <img src="../Sources/diamond.png" alt="" class="game_cards" prize="diamond">
+                </div>
+                <div class="game_contents">
+                    <img src="../Sources/watermelon.png" alt="" class="game_cards" prize="watermelon">
+                </div>
+                <div class="game_contents">
+                    <img src="../Sources/explode.png" alt="" class="game_cards" prize="explode">
+                </div>
+                <div class="game_contents">
+                    <img src="../Sources/bar.png" alt="" class="game_cards" prize="bar">
+                </div>
+                <div class="game_contents">
+                    <img src="../Sources/cherry.png" alt="" class="game_cards" prize="cherry">
+                </div>
+                <div class="game_contents">
+                    <img src="../Sources/horseShoe.png" alt="" class="game_cards" prize="horseShoe">
+                </div>
+                <div class="game_contents">
+                    <img src="../Sources/kambana.png" alt="" class="game_cards" prize="kambana">
+                </div>
+            </div>
+        </section>
+        <div class="winner hidden">
+            <div class="wrapper">
+                <p class="winningMessage"></p>
+                <img src="" alt="" class="pop-up">
+                <button class="close-btn">Close</button>
+            </div>
+        </div>
+    </main>
     <footer>
         <p>&copy; 2025 Ivan Tsenov</p>
     </footer>
 </body>
-
 </html>
