@@ -330,3 +330,101 @@
   object-fit: cover;
   display: block;
 }
+
+.tablet .casino {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tablet .game {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0px;
+  width: 80%;
+  height: 80%;
+  border: 2px solid ghostwhite;
+  padding: 5px;
+  gap: 5px;
+}
+
+.tablet.landscape .game {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0px;
+  min-width: 400px;
+  min-height: 400px;
+  width: 45%;
+  height: 45%;
+  border: 2px solid ghostwhite;
+  padding: 5px;
+  gap: 5px;
+}
+
+.tablet .game_contents {
+  border: 5px solid #2f2f2f;
+}
+
+.tablet .game_contents.random {
+  border: 5px solid orangered;
+}
+
+.tablet .game_cards {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.tablet .casino_start:hover {
+  background-color: #FFBF00;
+  transform: scale(110%);
+}
+
+.tablet .wrapper {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.tablet.landscape .wrapper {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.tablet .wrapper .pop-up {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.tablet .winningMessage {
+  width: 100%;
+  text-align: center;
+  font-size: 2.2rem;
+  color: white;
+  padding: 10px;
+}
+
+.tablet .close-btn {
+  border-radius: 12px;
+  padding: 4px 4px;
+  height: auto;
+  width: fit-content;
+  min-width: 150px;
+  margin: 10px auto;
+  background-color: rgb(255, 255, 0);
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: black;
+  border: none;
+}
+
+.tablet .close-btn:hover {
+  background-color: #FFBF00;
+  transform: scale(110%);
+}
