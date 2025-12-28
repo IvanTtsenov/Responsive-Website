@@ -15,7 +15,6 @@
     cursor: pointer;
     width: 20%;
     max-width: 80px;
-    height: max-height;
 }
 
 .mobile #navbar_logo .logo {
@@ -415,6 +414,17 @@
   gap: 0px;
   width: 95%;
   height: 95%;
+  border: 2px solid ghostwhite;
+  padding: 5px;
+  gap: 5px;
+}
+
+.mobile.landscape .game {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0px;
+  width: 20%;
+  height: 20%;
   border: 2px solid ghostwhite;
   padding: 5px;
   gap: 5px;

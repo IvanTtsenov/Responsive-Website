@@ -13,12 +13,10 @@ function getRandomInt(max) {
 
 
 let isClicked = false;
-
 function gameLogic() {
     casinoPrizes.forEach(prize => {
         prize.classList.remove('random');
     });
-
     randomIndex = getRandomInt(casinoPrizes.length);
     casinoPrizes[randomIndex].classList.add('random');
 }
@@ -61,5 +59,5 @@ function prisePop(randomIndex) {
 }
 
 closeBtn.addEventListener('click', () => {
-    winner.classList.add('hidden'); // hide the popup
+    winner.classList.add('hidden');
 });

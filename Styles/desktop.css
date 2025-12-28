@@ -288,8 +288,8 @@
   gap: 0px;
   min-width: 400px;
   min-height: 400px;
-  width: 35%;
-  height: 35%;
+  width: 30%;
+  height: 30%;
   border: 2px solid ghostwhite;
   padding: 5px;
   gap: 5px;
@@ -301,6 +301,7 @@
 
 .desktop .game_contents.random {
   border: 5px solid orangered;
+  opacity: 0.5;
 }
 
 .desktop .game_cards {
@@ -319,6 +320,7 @@
   width: 25%;
   display: flex;
   flex-direction: column;
+  min-width: 400px;
 }
 
 .desktop .wrapper .pop-up {
@@ -424,6 +426,10 @@
 
   .desktop .pages_wrapper.open {
     display: flex;
+  }
+
+  .desktop .contact {
+    width: 450px;
   }
 }
 
