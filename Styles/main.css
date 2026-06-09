@@ -1,0 +1,191 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-color: #141300;
+    max-width: 3840px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+header {
+    background-color: #0e0d00;
+    height: 84px;
+    max-height: 84px;
+    position: fixed;
+    z-index: 999;
+}
+
+main {
+    padding-top: 84px;
+    padding-bottom: 60px;
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    position: relative;
+}
+
+footer {
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #0e0d00;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    align-content: center;
+}
+
+.rightMenu {
+    display: flex;
+    margin: auto 2%;
+}
+
+.language {
+    padding: 4px 4px;
+    height: auto;
+    width: auto;
+    margin: auto 10px;
+    background-color: rgb(255, 255, 0);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    border: none;
+    position: relative;
+}
+
+.language:hover {
+    box-shadow: 0 0 5px 5px grey;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #000;
+    transition: transform 0.3s ease;
+}
+
+.language.open .arrow {
+    transform: rotate(180deg);
+}
+
+.languageChoose {
+    position: absolute;
+    background-color: #b3b8a3;
+    top: 100%;
+    right: 0;
+    left: 0;
+    display: block;
+}
+
+.languageChoose a {
+    display: block;
+    padding: 6px 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.languageChoose a:hover {
+    background-color: rgb(143, 143, 12);
+    color: black;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.active {
+    border-bottom: 3px solid yellow;
+}
+
+.tablet .active {
+    color: yellow !important;
+    border-bottom: none
+}
+
+.mobile .active {
+    color: yellow !important;
+    border-bottom: none
+}
+
+h1 {
+    font-size: clamp(2.5rem, 4vw, 5.5rem);
+}
+
+p {
+    text-align: justify;
+}
+
+footer p {
+    text-align: center;
+}
+
+section.contact_details address a {
+    color: wheat;
+}
+
+button.casino_start {
+    border-radius: 12px;
+    padding: 4px 4px;
+    height: auto;
+    width: auto;
+    margin: 10px;
+    background-color: rgb(255, 255, 0);
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: black;
+    border: none;
+}
+
+button.casino_start.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+div.winner {
+    z-index: 11;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #141300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: popup 0.75s ease-out forwards;
+}
+
+@keyframes popup {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

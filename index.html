@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirect</title>
+</head>
+<body>
+  <script>
+    const saved = localStorage.getItem('lang');
+    if (saved) {
+      window.location.replace(saved + '/index.html');
+    } else {
+      const lang = navigator.language.startsWith('bg') ? 'bg' : 'en';
+      window.location.replace(lang + '/index.html');
+    }
+  </script>
+</body>
+</html>
